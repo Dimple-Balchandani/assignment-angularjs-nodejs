@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script src="app.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+		<link rel="stylesheet" href="style.css">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	</head>	
+	<body>
+		<div ng-controller="appctrl">
+			<nav class="navbar" role="navigation">
+				<div class="header">
+					<a ui-sref="#"></a>
+				</div>
+				<ul>
+					<li><a ui-sref="dashboard">Dashboard</a></li>
+					<li><a ui-sref="layout">Page Layout</a></li>
+				</ul>
+			</nav>	
+			<div class="container" >
+				<div ui-view></div>
+			</div>	
+		</div>
+	</body>	
+</html>

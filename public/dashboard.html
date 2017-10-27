@@ -1,0 +1,17 @@
+<h1>Welcome</h1>
+
+<div class="left-container">
+	<input type="text" ng-model="suggestion" />
+	<button ng-click="SubmitSuggestion(suggestion)">Submit</button>
+</div>
+
+<div class="right-container">
+	<h1>User's Suggestion</h1>
+	<div ng-repeat= "suggestion in showSuggestion">
+		{{suggestion.suggestion}}
+	</div>
+</div>
+
+<button class="count" ng-click="showCount()">Count</button>
+
+
